@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#020617"/>
+      <stop offset="50%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e1b4b"/>
+    </linearGradient>
+    <linearGradient id="carGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="50%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#2563eb"/>
+    </linearGradient>
+    <linearGradient id="stripeGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#cbd5e1"/>
+    </linearGradient>
+    <linearGradient id="flameGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="50%" stop-color="#ef4444"/>
+      <stop offset="100%" stop-color="#38bdf8"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Base Rounded Container -->
+  <rect width="512" height="512" rx="112" fill="url(#bg)" stroke="#38bdf8" stroke-width="8" stroke-opacity="0.6"/>
+
+  <!-- Speed Lines Background -->
+  <path d="M40 180 L200 180 M20 240 L160 240 M60 300 L220 300" stroke="#0ea5e9" stroke-width="6" stroke-linecap="round" stroke-dasharray="16 12" opacity="0.4"/>
+  <path d="M472 180 L320 180 M492 240 L360 240 M452 300 L300 300" stroke="#f59e0b" stroke-width="6" stroke-linecap="round" stroke-dasharray="16 12" opacity="0.4"/>
+
+  <!-- Stylized Sports Car Body Top-Down / 3/4 Isometric Silhouette -->
+  <g transform="translate(136, 96)">
+    <!-- Wheels -->
+    <rect x="0" y="48" width="28" height="56" rx="10" fill="#090d16" stroke="#64748b" stroke-width="4"/>
+    <rect x="212" y="48" width="28" height="56" rx="10" fill="#090d16" stroke="#64748b" stroke-width="4"/>
+    <rect x="0" y="224" width="30" height="64" rx="10" fill="#090d16" stroke="#64748b" stroke-width="4"/>
+    <rect x="210" y="224" width="30" height="64" rx="10" fill="#090d16" stroke="#64748b" stroke-width="4"/>
+
+    <!-- Nitro Flames Rear Exhaust -->
+    <path d="M50 310 L60 360 L70 310 Z" fill="url(#flameGrad)"/>
+    <path d="M170 310 L180 360 L190 310 Z" fill="url(#flameGrad)"/>
+
+    <!-- Main Aerodynamic Chassis -->
+    <path d="M30 64 C30 20, 70 8, 120 8 C170 8, 210 20, 210 64 L216 230 C216 290, 180 310, 120 310 C60 310, 24 290, 24 230 Z" fill="url(#carGrad)" stroke="#7dd3fc" stroke-width="5"/>
+
+    <!-- Double Racing Stripes -->
+    <rect x="104" y="12" width="12" height="294" fill="url(#stripeGrad)" opacity="0.9"/>
+    <rect x="124" y="12" width="12" height="294" fill="url(#stripeGrad)" opacity="0.9"/>
+
+    <!-- Cockpit / Windshield Glass -->
+    <path d="M52 100 C52 70, 76 60, 120 60 C164 60, 188 70, 188 100 L180 180 C180 190, 160 196, 120 196 C80 196, 60 190, 60 180 Z" fill="#020617" stroke="#38bdf8" stroke-width="3" opacity="0.92"/>
+
+    <!-- Rear Spoiler -->
+    <rect x="16" y="280" width="208" height="20" rx="6" fill="#0f172a" stroke="#0ea5e9" stroke-width="4"/>
+
+    <!-- Headlights -->
+    <polygon points="40,24 64,16 58,40" fill="#fef08a"/>
+    <polygon points="200,24 176,16 182,40" fill="#fef08a"/>
+  </g>
+
+  <!-- Badge Title Text -->
+  <text x="256" y="440" font-family="'Impact', 'Arial Black', sans-serif" font-weight="900" font-size="38" fill="#ffffff" text-anchor="middle" letter-spacing="4">PIXEL RACER 3D</text>
+  <text x="256" y="472" font-family="'Arial', sans-serif" font-weight="700" font-size="16" fill="#f59e0b" text-anchor="middle" letter-spacing="6">OFFLINE RACING</text>
+</svg>
